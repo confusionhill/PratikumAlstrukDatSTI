@@ -3,5 +3,5 @@
 IF21222 is Algorithm and Data Structure class. This class offers the concepts of algorithms and data structures commonly used in the field of informatics/computer science, skill in designing and using algorithms and data structure for problem solving, and developing programs in procedural paradigm using a C programming language. 
 ## What this repository use for
 Personal tracker on what i have done during the lab session
-## List of Course
+## List of Courses
 1. Introduction to Abstract Data Type
