@@ -11,7 +11,7 @@ void MakeGARIS (POINT P1, POINT P2, GARIS * L) {
 void BacaGARIS (GARIS * L) {
     POINT p1,p2;
     while (EQ(p1,p2)) {
-        printf("Masukan Garis : \n");
+        printf("Garis tidak valid\n");
         BacaPOINT(&p1);
         BacaPOINT(&p2);
     }
@@ -27,7 +27,7 @@ float PanjangGARIS (GARIS L) { //MARK: Need to work on it ASAP
 }
 
 float Gradien (GARIS L) {
-    return (Ordinat(PAwal(L)) - Ordinat(PAkhir(L)))/(Absis(PAwal(L)) - Absis(PAkhir(L)));
+    return -(Ordinat(PAwal(L)) - Ordinat(PAkhir(L)))/(Absis(PAwal(L)) - Absis(PAkhir(L)));
 }
 
 void GeserGARIS (GARIS * L, float deltaX, float deltaY) {
@@ -40,6 +40,6 @@ void GeserGARIS (GARIS * L, float deltaX, float deltaY) {
 boolean IsTegakLurus (GARIS L1, GARIS L2) {
     return Gradien(L1)*Gradien(L2) == -1;
 }
-boolean IsTegakLurus (GARIS L1, GARIS L2) {
-    return Gradien(L1) ==Gradien(L2);
+boolean IsSejajar (GARIS L1, GARIS L2){
+    return (Gradien(L1) == Gradien(L2));
 }
