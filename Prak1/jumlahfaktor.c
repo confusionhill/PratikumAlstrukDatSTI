@@ -2,21 +2,19 @@
 #include <stdlib.h>
 
 
-int main()
-{
-    int num;
-    int total = 0;
-    int i;
-    scanf("%d",&num);
-    if(num>=1 && num<=1000000){
-        for (i=1;i<=1000000;i++){
-            if (num%i==0){total = total + i;}
-        }
-    } else {
-        return 0;
-    }
-
-    printf("%d\n",total);
-
-    return 0;
+int main() {
+   int n = -1;
+   int i = 0;
+   int res = 0;
+   scanf("%d", &n);
+   if (!(n>=1 && n<=1000000)) {
+      return 0;
+   }
+   for (i = 1; i <= n; i++){
+      if (n%i == 0){
+         res += i;
+      }
+   }
+   printf("%d\n", res);
+   return 0;
 }
