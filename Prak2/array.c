@@ -36,7 +36,7 @@ ElType GetElmt (TabInt T, IdxType i) {
 }
 
 void SetTab (TabInt Tin, TabInt *Tout) {
-    Tout = &Tin;
+    *Tout = Tin;
 }
 
 //Mark: Perlu dilihat //INI UDH BENER CUK
